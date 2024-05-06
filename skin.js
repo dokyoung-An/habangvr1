@@ -1,7 +1,7 @@
 // Garden Gnome Software - Skin
 // Pano2VR 7.0.10/20025
 // Filename: ?? VR ??? - ????.ggsk
-// Generated 2024-05-06T19:28:16
+// Generated 2024-05-06T19:34:33
 
 function pano2vrSkin(player,base) {
 	player.addVariable('vis_roomchoice', 2, false, { ignoreInState: 0  });
@@ -974,8 +974,8 @@ function pano2vrSkin(player,base) {
 				me.__14.ggCurrentLogicStateScaling = newLogicStateScaling;
 				me.__14.style.transition='right 0s, top 0s, transform 0s';
 				if (me.__14.ggCurrentLogicStateScaling == 0) {
-					me.__14.ggParameter.sx = 0.75;
-					me.__14.ggParameter.sy = 0.7;
+					me.__14.ggParameter.sx = 0.85;
+					me.__14.ggParameter.sy = 0.8;
 					me.__14.style.transform=parameterToTransform(me.__14.ggParameter);
 					skin.updateSize(me.__14);
 				}
@@ -1151,6 +1151,10 @@ function pano2vrSkin(player,base) {
 		me.__35.logicBlock_visible();
 		me.__35.onclick=function (e) {
 			player.setVariableValue('vis_roomchoice', !player.getVariableValue('vis_roomchoice'));
+			me.__4.ggVisible = !me.__4.ggVisible;
+			var flag=me.__4.ggVisible;
+			me.__4.style.transition='none';
+			me.__4.style.visibility=((flag)&&(Number(me.__4.style.opacity)>0||!me.__4.style.opacity))?'inherit':'hidden';
 		}
 		me.__35.ggUpdatePosition=function (useTransition) {
 		}
@@ -3297,6 +3301,60 @@ function pano2vrSkin(player,base) {
 		el.ggElementNodeId=function() {
 			return player.getCurrentNode();
 		}
+		me.__4.logicBlock_position = function() {
+			var newLogicStatePosition;
+			if (
+				((player.getViewerSize().width <= 640))
+			)
+			{
+				newLogicStatePosition = 0;
+			}
+			else {
+				newLogicStatePosition = -1;
+			}
+			if (me.__4.ggCurrentLogicStatePosition != newLogicStatePosition) {
+				me.__4.ggCurrentLogicStatePosition = newLogicStatePosition;
+				me.__4.style.transition='left 0s, bottom 0s, transform 0s';
+				if (me.__4.ggCurrentLogicStatePosition == 0) {
+					me.__4.style.left='-100px';
+					me.__4.style.bottom='10px';
+				}
+				else {
+					me.__4.style.left='0px';
+					me.__4.style.bottom='10px';
+				}
+			}
+		}
+		me.__4.logicBlock_position();
+		me.__4.logicBlock_scaling = function() {
+			var newLogicStateScaling;
+			if (
+				((player.getViewerSize().width <= 640))
+			)
+			{
+				newLogicStateScaling = 0;
+			}
+			else {
+				newLogicStateScaling = -1;
+			}
+			if (me.__4.ggCurrentLogicStateScaling != newLogicStateScaling) {
+				me.__4.ggCurrentLogicStateScaling = newLogicStateScaling;
+				me.__4.style.transition='left 0s, bottom 0s, transform 0s';
+				if (me.__4.ggCurrentLogicStateScaling == 0) {
+					me.__4.ggParameter.sx = 0.5;
+					me.__4.ggParameter.sy = 0.6;
+					me.__4.style.transform=parameterToTransform(me.__4.ggParameter);
+					skin.updateSize(me.__4);
+				}
+				else {
+					me.__4.ggParameter.sx = 1;
+					me.__4.ggParameter.sy = 1;
+					me.__4.style.transform=parameterToTransform(me.__4.ggParameter);
+					skin.updateSize(me.__4);
+				}
+			}
+		}
+		me.__4.logicBlock_scaling();
 		me.__4.ggUpdatePosition=function (useTransition) {
 		}
 		el=me.__5=document.createElement('div');
@@ -3733,6 +3791,8 @@ function pano2vrSkin(player,base) {
 		me._dowm.logicBlock_visible();
 		me.__6.logicBlock_position();
 		me.__6.logicBlock_scaling();
+		me.__4.logicBlock_position();
+		me.__4.logicBlock_scaling();
 		me.__.logicBlock_scaling();
 		player.addListener('activehotspotchanged', function(event) {
 			if (hotspotTemplates.hasOwnProperty('ht_node')) {
@@ -3821,6 +3881,8 @@ function pano2vrSkin(player,base) {
 			me.__14.logicBlock_scaling();
 			me.__6.logicBlock_position();
 			me.__6.logicBlock_scaling();
+			me.__4.logicBlock_position();
+			me.__4.logicBlock_scaling();
 			me.__.logicBlock_scaling();
 		});
 		player.addListener('varchanged_vis_long', function(event) {
@@ -3960,6 +4022,9 @@ function pano2vrSkin(player,base) {
 			if (me._nodeimage_118a.isDragging()) return;
 			player.openNext("{"+me.ggNodeId+"}","");
 			player.setVariableValue('vis_roomchoice', false);
+			skin.__4.style.transition='none';
+			skin.__4.style.visibility=(Number(skin.__4.style.opacity)>0||!skin.__4.style.opacity)?'inherit':'hidden';
+			skin.__4.ggVisible=true;
 		}
 		me._nodeimage_118a.ggUpdatePosition=function (useTransition) {
 		}
