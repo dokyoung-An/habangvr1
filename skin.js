@@ -1,7 +1,7 @@
 // Garden Gnome Software - Skin
 // Pano2VR 7.0.10/20025
 // Filename: ?? VR ??? - ????.ggsk
-// Generated 2024-05-06T19:34:33
+// Generated 2024-05-06T19:37:57
 
 function pano2vrSkin(player,base) {
 	player.addVariable('vis_roomchoice', 2, false, { ignoreInState: 0  });
@@ -937,7 +937,7 @@ function pano2vrSkin(player,base) {
 		me.__14.logicBlock_position = function() {
 			var newLogicStatePosition;
 			if (
-				((player.getViewerSize().width <= 460))
+				((player.getViewerSize().width <= 640))
 			)
 			{
 				newLogicStatePosition = 0;
@@ -949,7 +949,7 @@ function pano2vrSkin(player,base) {
 				me.__14.ggCurrentLogicStatePosition = newLogicStatePosition;
 				me.__14.style.transition='right 0s, top 0s, transform 0s';
 				if (me.__14.ggCurrentLogicStatePosition == 0) {
-					me.__14.style.right='2px';
+					me.__14.style.right='10px';
 					me.__14.style.top = 'calc(50% - (380px / 2) + (0px / 2) + 5px)';
 				}
 				else {
@@ -974,8 +974,8 @@ function pano2vrSkin(player,base) {
 				me.__14.ggCurrentLogicStateScaling = newLogicStateScaling;
 				me.__14.style.transition='right 0s, top 0s, transform 0s';
 				if (me.__14.ggCurrentLogicStateScaling == 0) {
-					me.__14.ggParameter.sx = 0.85;
-					me.__14.ggParameter.sy = 0.8;
+					me.__14.ggParameter.sx = 0.9;
+					me.__14.ggParameter.sy = 0.85;
 					me.__14.style.transform=parameterToTransform(me.__14.ggParameter);
 					skin.updateSize(me.__14);
 				}
