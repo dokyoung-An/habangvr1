@@ -597,7 +597,7 @@
     <control invertwheel="0" lockedmouse="0" lockedkeyboardzoom="0" lockedkeyboard="0" dblclickfullscreen="0" zoomcentercursor="1" invertcontrol="1" speedwheel="1" lockedwheel="0" contextvr="1" rubberband="0" contextprojections="0" hideabout="1" contextfullscreen="1" sensitivity="8" simulatemass="1"/>
   </panorama>
   <masternode>
-    <userdata author="하방" tags="" title="00아파트 사전점검" description="사전점검대행 하방 VR 서비스" comment="사전점검대행 하방 VR 서비스" copyright="하방"/>
+    <userdata author="하방" tags="" title="사전점검대행 하방 VR 서비스" description="사전점검대행 하방 VR 서비스" comment="사전점검대행 하방 VR 서비스" copyright="하방"/>
     <animationsequences>
       <sequence title="Animation01"/>
     </animationsequences>
