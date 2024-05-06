@@ -1,7 +1,7 @@
 // Garden Gnome Software - Skin
 // Pano2VR 7.0.10/20025
 // Filename: ?? VR ??? - ????.ggsk
-// Generated 2024-05-06T19:38:50
+// Generated 2024-05-06T19:41:51
 
 function pano2vrSkin(player,base) {
 	player.addVariable('vis_roomchoice', 2, false, { ignoreInState: 0  });
@@ -1270,7 +1270,7 @@ function pano2vrSkin(player,base) {
 		hs+='width: 100%;';
 		hs+='height: auto;';
 		hs+='max-height: 100%;';
-		hs+='font-size: 10px;';
+		hs+='font-size: 11px;';
 		hs+='font-weight: inherit;';
 		hs+='text-align: center;';
 		hs+='position: absolute;';
@@ -1455,7 +1455,7 @@ function pano2vrSkin(player,base) {
 		hs+='width: 100%;';
 		hs+='height: auto;';
 		hs+='max-height: 100%;';
-		hs+='font-size: 10px;';
+		hs+='font-size: 11px;';
 		hs+='font-weight: inherit;';
 		hs+='text-align: center;';
 		hs+='position: absolute;';
@@ -1647,7 +1647,7 @@ function pano2vrSkin(player,base) {
 		hs+='width: 100%;';
 		hs+='height: auto;';
 		hs+='max-height: 100%;';
-		hs+='font-size: 10px;';
+		hs+='font-size: 11px;';
 		hs+='font-weight: inherit;';
 		hs+='text-align: center;';
 		hs+='position: absolute;';
@@ -1823,7 +1823,7 @@ function pano2vrSkin(player,base) {
 		hs+='width: 100%;';
 		hs+='height: auto;';
 		hs+='max-height: 100%;';
-		hs+='font-size: 10px;';
+		hs+='font-size: 11px;';
 		hs+='font-weight: inherit;';
 		hs+='text-align: center;';
 		hs+='position: absolute;';
@@ -2012,7 +2012,7 @@ function pano2vrSkin(player,base) {
 		hs+='width: 100%;';
 		hs+='height: auto;';
 		hs+='max-height: 100%;';
-		hs+='font-size: 10px;';
+		hs+='font-size: 11px;';
 		hs+='font-weight: inherit;';
 		hs+='text-align: center;';
 		hs+='position: absolute;';
@@ -2077,7 +2077,7 @@ function pano2vrSkin(player,base) {
 		hs+='width: 100%;';
 		hs+='height: auto;';
 		hs+='max-height: 100%;';
-		hs+='font-size: 10px;';
+		hs+='font-size: 11px;';
 		hs+='font-weight: inherit;';
 		hs+='text-align: center;';
 		hs+='position: absolute;';
@@ -2349,7 +2349,7 @@ function pano2vrSkin(player,base) {
 		hs+='width: 100%;';
 		hs+='height: auto;';
 		hs+='max-height: 100%;';
-		hs+='font-size: 10px;';
+		hs+='font-size: 11px;';
 		hs+='font-weight: inherit;';
 		hs+='text-align: center;';
 		hs+='position: absolute;';
@@ -2908,7 +2908,7 @@ function pano2vrSkin(player,base) {
 		hs+='width: 100%;';
 		hs+='height: auto;';
 		hs+='max-height: 100%;';
-		hs+='font-size: 10px;';
+		hs+='font-size: 11px;';
 		hs+='font-weight: inherit;';
 		hs+='text-align: center;';
 		hs+='position: absolute;';
